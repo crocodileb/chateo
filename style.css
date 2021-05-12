@@ -1,0 +1,156 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px; 
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin: 3 0px 0 100px 0;
+}
+
+.img img {
+  width: 300px;
+  height: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.answer.comm {
+
+}
+
+label {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  margin: 10px 0;
+  z-index: 1;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius:0px;
+  appearance: none;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  z-index: 200;
+  box-sizing: border-box;
+}
+
+input:checked{
+  background-color: #BFBFBF;
+  z-index: 0;
+
+}
+
+.eva {
+  margin-top: 100px;
+  
+}
+
+.ev , .nar {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 14px;
+  background-color: rgba(0,0,0,0);
+  text-transform: uppercase;
+}
+
+.nar {
+  letter-spacing: 18px;
+  font-size: 30px;
+  width: 300px;
+}
+
+.nar:active {
+
+}
+
+.box {
+  width: 198px;
+  display: flex;
+  position: relative;
+  bottom: 30px;
+  z-index: 0;
+}
+
+.na {
+  width: 298px;
+}
+
+.let {
+  height: 38px;
+  width: 100%;
+  border:1px solid #999;
+  background-color: rgba(0,0,0,0);
+}
+
+.btn {
+  display: none;
+  margin-top: 50px;
+}
+
+.btn.active {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background-color: #BFBFBF;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.link.tg {
+  background-color: white;
+}
+
+.link i {
+  color: #4C6EF5;
+  font-size: 30px;
+}
+
+@media (max-width: 767px){
+  .wrapper {
+    max-width: none;
+  }
